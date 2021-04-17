@@ -1,6 +1,6 @@
 import React from "react";
 
-function Body() {
+function Jumbotron() {
     return(
         //body html
         <div className="container">
@@ -9,4 +9,4 @@ function Body() {
     )
 }
 
-export default Body;
+export default Jumbotron;
