@@ -1,5 +1,5 @@
 import React from 'react';
-import "Wrapper.css";
+import "./Wrapper.css";
 
 export default function index(props) {
     return (

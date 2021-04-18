@@ -1,19 +1,21 @@
 
 //importing components
 import React from "react";
-import Card from "./components/Card";
-import NavBar from "./components/NavBar";
+import {browserRouter as Router, Route } from "react-router-dom";
+import Card from "./components/Card/index";
+import NavBar from "./components/NavBar/index";
+import Wrapper from "./components/Wrapper/index";
 
 
 function App() {
   return (
-    <>
-      <NavBar />;
-     <div className="container">
+    <Router>
+    <Wrapper className="container">
+      <NavBar />
       <Card />
-      </div>;
-    </>
-  )
+    </Wrapper>
+    </Router>
+  );
 }
 
 export default App;
