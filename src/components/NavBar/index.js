@@ -1,7 +1,8 @@
-import React from 'react'
-import "./NavBar.css";
+import React from 'react';
+import { link } from "react-router-dom"
+import "./style.css";
 
-export default function navbar() {
+export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
   <a className="navbar-brand" href="#">Welcome to our Employee Directory- </a>
