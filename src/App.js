@@ -2,8 +2,8 @@
 //importing components
 import React,{useState, useEffect} from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Navbar from "./components/Navbar/";
-import Employlist from "./components/Employlist";
+import Navbar from "./components/NavSearch";
+import Employlist from "./components/EmployList";
 import api from "./util/api";
 
 
