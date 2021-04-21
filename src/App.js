@@ -1,24 +1,33 @@
 
 //importing components
-import React from "react";
+import React,{useState, useEffect} from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import NavBar from "./components/NavBar/index";
-import Card from "./components/Card/index";
-import Wrapper from "./components/Wrapper/index";
+import Navbar from "./components/Navbar/";
 import Employlist from "./components/Employlist";
+import api from "./util/api";
 
 
-export default function App() {
+
+ function App() {
+  const [employees, setEmployees] = useState([]);
+  useEffect(function(){
+    api.getEmployees().then(function(res){
+      setEmployees(res.data.results);
+
+    });
+
+  },[])
+console.log(employees);
   return (
     <Router>
       <div>
-        <NavBar></NavBar>
-        <div>
-          <Route exact path="/" component={Employlist} />
-        </div>
+        <Navbar></Navbar>
+        
+          {/* <Route exact path="/" component={Employlist} /> */}
+        
         </div>
     </Router>
   );
 }
 
-
+export default App;
