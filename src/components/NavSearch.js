@@ -8,7 +8,7 @@ import React from 'react';
       <div className="row">
         <div className="col text-center mb-4">
           <h1 >Employee Directory</h1>
-          <p id="intro">Search employees by first name or select Employee Name to sort directory.</p>
+          <p id="intro">Welcome to our directory.</p>
         </div>
       </div>
       <div className="row">
@@ -19,7 +19,7 @@ import React from 'react';
               name="search"
               type="text"
               list="employee"
-              placeholder="Search Employees"
+              placeholder="Search"
               onChange={props.handleInputChange}
             />
           </div>

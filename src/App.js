@@ -1,7 +1,7 @@
 
 //importing components
 import React from "react";
-import Container from "./components.Container.js";
+import Container from "./components/Container";
 
 function App() {
   return (

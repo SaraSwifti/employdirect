@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import NavSearch from "./NavSearch";
 import EmployList from "./EmployList";
-import API from "../utils/API";
-// import "../style/style.css";
+import API from "../util/api";
 
+//Class hugs around all components in the container and listens to the change in state to capture the change
 class Container extends Component {
   state = {
     employees: [],
