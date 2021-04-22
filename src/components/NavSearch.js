@@ -7,8 +7,7 @@ import React from 'react';
     <div className="container header-container mt-5 mb-5">
       <div className="row">
         <div className="col text-center mb-4">
-          <h1 >Employee Directory</h1>
-          <p id="intro">Welcome to our directory.</p>
+          <p >Welcome to our directory.</p>
         </div>
       </div>
       <div className="row">

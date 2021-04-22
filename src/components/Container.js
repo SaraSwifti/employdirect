@@ -26,16 +26,16 @@ class Container extends Component {
       }))
       .catch(err => console.log(err))
   };
-  
+  //is listening to the input field for the event of input
   handleInputChange = event => {
     const input = event.target.value;
     const employees = this.state.employees;
-    const searchEmployees = employees.filter(employee => employee.name.first.toLowerCase().indexOf(input.toLowerCase()) > -1)
+    const searchEmployees = employees.filter(employee => employee.name.first.indexOf(input.toLowerCase()) > -1)
     this.setState({
       searchEmployees,
     });
   };
-
+//I need to make a button for this ? added sorted employees to name line.doesnt seem to be working.
   handleSortByName = () => {
     const searchEmployees = this.state.searchEmployees;
     if (this.state.order === "asc") {

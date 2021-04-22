@@ -16,9 +16,9 @@ import React from 'react';
             {props.results.map(employee => (
               <tr className="table" key={employee.login.uuid}>
                 <td className="image"> <img src={employee.picture.large} alt={employee.name.first + " " + employee.name.last + " "}/></td>
-                <td className="name align-middle">{employee.name.first + " " + employee.name.last}</td>
-                <td className="phone align-middle">{employee.cell}</td>
-                <td className="email align-middle"><a href={`mailto:${employee.email}`}>{employee.email}</a></td>
+                <td className="align-middle" onChange={props.sortEmployees}>{employee.name.first + " " + employee.name.last}</td>
+                <td className="align-middle">{employee.cell}</td>
+                <td className="align-middle"><a href={`mailto:${employee.email}`}>{employee.email}</a></td>
               </tr>
             ))}
           </tbody>
