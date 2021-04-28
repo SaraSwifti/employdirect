@@ -1,5 +1,6 @@
 # Unit 19 React Homework: Employee Directory
 [App local deploy video] (https://drive.google.com/file/d/17scnBEJRIH-o2cTGKwAv1w4d-rebvT4E/view)
+[deployed site? no idea, it popped up after following a tutorial] (http://192.168.1.123:5000/)
 ## Overview
 
 For this assignment, you'll create a employee directory with React. This assignment will require you to break up your application's UI into components, manage component state, and respond to user events.
